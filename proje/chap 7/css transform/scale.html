@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> CSS Transform</title>
+    <style>
+        .box {
+            height: 50px;
+            width: 50px;
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            position: relative;
+            top: 100px;
+            left: 100px;
+            transition: all 0.5s ease-in;
+        }
+        #box1 {background-color: aqua;}
+        #box1:hover {
+            transform: scale(2);
+        }
+        #box2 {background-color: blue;}
+        #box2:hover {
+            transform: scale(4);
+        }
+        #box3 {background-color: brown;}
+        #box3:hover {
+            transform: scalex(2);
+        }
+        #box4 {background-color: green;}
+        #box4:hover {
+            transform: scaley(2);
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">Scale 2</div>
+    <div id="box2" class="box">Scale 4</div>
+    <div id="box3" class="box"> X scale</div>
+    <div id="box4" class="box">Y scale</div>
+</body>
+</html>

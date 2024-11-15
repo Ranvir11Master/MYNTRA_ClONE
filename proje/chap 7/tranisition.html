@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tranisition</title>
+    <style>
+        .pseudo {
+            width: 150px;
+            height: 30px;
+            background-color: brown;
+            border: 2px solid black;
+            border-radius: 12px;
+/* 
+            transition-property: all;
+            transition-duration: 0.5s;
+            transition-timing-function: linear;
+            transition-delay: 0s; */
+
+            /* tranisition short hand 
+            tranisition: property duration function dalay
+            */
+            transition: all 0.5s linear 0s;
+
+        }
+        .pseudo:hover {
+            width: 160px;
+            height: 35px;
+            background-color: coral;
+        }
+        .pseudo:active {
+            width: 160px;
+            height: 35px;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+<body>
+    <button class="pseudo"">Pseudo learning</button>
+</body>
+</html>

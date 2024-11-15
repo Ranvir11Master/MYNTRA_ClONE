@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Border</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .mar {
+            height: 50px;
+            width: 50px;
+            padding: 2px;
+            margin: 5px;
+            box-sizing: border-box;
+        }
+        #first {
+            border: 2px solid;
+            background-color: orange;
+            border-radius: 5px 5px 5px 5px;
+            box-sizing: content-box;
+        }
+        #second {
+            background-color: aqua;
+            border: 2px dashed rebeccapurple;
+        } 
+    </style>
+</head>
+<body>
+    <div id="first" class="mar">First margin</div>
+    <div id="second" class="mar">Second margin</div>
+</body>
+</html>
